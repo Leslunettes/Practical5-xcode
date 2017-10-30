@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D57CF25E1FA7ACEB00F268DC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D57CF25D1FA7ACEB00F268DC /* main.cpp */; };
+		D57CF2B71FA7AFF600F268DC /* Square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D57CF2AB1FA7AFF600F268DC /* Square.cpp */; };
+		D57CF2B81FA7AFF600F268DC /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D57CF2AC1FA7AFF600F268DC /* Circle.cpp */; };
+		D57CF2B91FA7AFF600F268DC /* Rectangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D57CF2AD1FA7AFF600F268DC /* Rectangle.cpp */; };
+		D57CF2BA1FA7AFF600F268DC /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D57CF2B01FA7AFF600F268DC /* main.cpp */; };
+		D57CF2BB1FA7AFF700F268DC /* Shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D57CF2B21FA7AFF600F268DC /* Shape.cpp */; };
+		D57CF2BC1FA7AFF700F268DC /* ShapeTester.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D57CF2B31FA7AFF600F268DC /* ShapeTester.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +31,18 @@
 /* Begin PBXFileReference section */
 		D57CF25A1FA7ACEB00F268DC /* Practical5-xcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Practical5-xcode"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D57CF25D1FA7ACEB00F268DC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D57CF2AB1FA7AFF600F268DC /* Square.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Square.cpp; sourceTree = "<group>"; };
+		D57CF2AC1FA7AFF600F268DC /* Circle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Circle.cpp; sourceTree = "<group>"; };
+		D57CF2AD1FA7AFF600F268DC /* Rectangle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Rectangle.cpp; sourceTree = "<group>"; };
+		D57CF2AE1FA7AFF600F268DC /* Shape.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shape.h; sourceTree = "<group>"; };
+		D57CF2AF1FA7AFF600F268DC /* Rectangle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
+		D57CF2B01FA7AFF600F268DC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D57CF2B11FA7AFF600F268DC /* makefile.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = makefile.txt; sourceTree = "<group>"; };
+		D57CF2B21FA7AFF600F268DC /* Shape.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Shape.cpp; sourceTree = "<group>"; };
+		D57CF2B31FA7AFF600F268DC /* ShapeTester.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ShapeTester.cpp; sourceTree = "<group>"; };
+		D57CF2B41FA7AFF600F268DC /* ShapeTester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShapeTester.h; sourceTree = "<group>"; };
+		D57CF2B51FA7AFF600F268DC /* Square.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Square.h; sourceTree = "<group>"; };
+		D57CF2B61FA7AFF600F268DC /* Circle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +75,18 @@
 		D57CF25C1FA7ACEB00F268DC /* Practical5-xcode */ = {
 			isa = PBXGroup;
 			children = (
+				D57CF2AC1FA7AFF600F268DC /* Circle.cpp */,
+				D57CF2B61FA7AFF600F268DC /* Circle.h */,
+				D57CF2B01FA7AFF600F268DC /* main.cpp */,
+				D57CF2B11FA7AFF600F268DC /* makefile.txt */,
+				D57CF2AD1FA7AFF600F268DC /* Rectangle.cpp */,
+				D57CF2AF1FA7AFF600F268DC /* Rectangle.h */,
+				D57CF2B21FA7AFF600F268DC /* Shape.cpp */,
+				D57CF2AE1FA7AFF600F268DC /* Shape.h */,
+				D57CF2B31FA7AFF600F268DC /* ShapeTester.cpp */,
+				D57CF2B41FA7AFF600F268DC /* ShapeTester.h */,
+				D57CF2AB1FA7AFF600F268DC /* Square.cpp */,
+				D57CF2B51FA7AFF600F268DC /* Square.h */,
 				D57CF25D1FA7ACEB00F268DC /* main.cpp */,
 			);
 			path = "Practical5-xcode";
@@ -119,7 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D57CF2B71FA7AFF600F268DC /* Square.cpp in Sources */,
+				D57CF2B81FA7AFF600F268DC /* Circle.cpp in Sources */,
 				D57CF25E1FA7ACEB00F268DC /* main.cpp in Sources */,
+				D57CF2BC1FA7AFF700F268DC /* ShapeTester.cpp in Sources */,
+				D57CF2BA1FA7AFF600F268DC /* main.cpp in Sources */,
+				D57CF2B91FA7AFF600F268DC /* Rectangle.cpp in Sources */,
+				D57CF2BB1FA7AFF700F268DC /* Shape.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
