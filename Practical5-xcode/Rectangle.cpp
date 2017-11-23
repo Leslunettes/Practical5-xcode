@@ -9,30 +9,48 @@
 
 using std::string;
 
-Rectangle::Rectangle(float width, float height, const std::string& borderColor, bool fill, const std::string& fillColor)
-{
-	// TODO: implement me
+Rectangle::Rectangle(float width, float height, const std::string& borderColor,
+		bool fill, const std::string& fillColor) :
+		Shape(borderColor, fill, fillColor), width_ { width }, height_ { height } {
 }
 
 Rectangle::~Rectangle() {
-	// TODO: implement me
 }
 
 float Rectangle::width() const {
-	// TODO: implement me or remove me
-	return 0.0;
+	return width_;
 }
 
 float Rectangle::height() const {
-	// TODO: implement me or remove me
-	return 0.0;
+	return height_;
 }
 
 void Rectangle::setWidth(float width) {
-	// TODO: implement me or remove me
+	width_ = width;
 }
 
 void Rectangle::setHeight(float height) {
-	// TODO: implement me or remove me
+	height_ = height;
 }
 
+float Rectangle::area() const {
+	return height_ * width_;
+}
+
+float Rectangle::perimeter() const {
+	return 2 * (height_ + width_);
+}
+string Rectangle::toString() const {
+	std::ostringstream ssw;
+	ssw << width_;
+	std::string sw(ssw.str());
+
+	std::ostringstream ssh;
+	ssh << height_;
+	std::string sh(ssh.str());
+
+	string stringx = "Rectangle of width " + sw + " and height " + sh;
+	stringx += Shape::toString();
+	return stringx;
+}
+//add function area + perimeters

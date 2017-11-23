@@ -10,39 +10,38 @@
 using std::string;
 using std::ostream;
 
-Shape::Shape(const std::string& borderColor,bool fill, const std::string& fillColor)
-{
-	// TODO: implement me
+
+
+Shape::Shape(const std::string& borderColor, bool fill,
+		const std::string& fillColor) :
+		borderColor_ { borderColor }, fillColor_ { fillColor }, filled_ { fill } {
 }
 
 Shape::~Shape() {
 	// TODO: implement me
 }
 
-string Shape::borderColor() const {
-	// TODO: implement me
-	return "";
+std::string Shape::borderColor() const {
+	return borderColor_;
 }
 
 void Shape::setBorderColor(const std::string& color) {
-	// TODO: implement me
+	borderColor_ = color;
 }
 
 bool Shape::fill() const {
-	// TODO: implement me
-	return false;
+	return filled_;
 }
 void Shape::setFill(bool fill) {
-	// TODO: implement me
+	filled_ = fill;
 }
 
-string Shape::fillColor() const {
-	// TODO: implement me
-	return "";
+std::string Shape::fillColor() const {
+	return fillColor_;
 }
 
 void Shape::setFillColor(const std::string& color) {
-	// TODO: implement me
+	fillColor_ = color;
 }
 
 float Shape::area() const {
@@ -55,12 +54,15 @@ float Shape::perimeter() const {
 	return 0.0;
 }
 
-string Shape::toString() const {
-	// TODO: implement me or remove me
-	return "";
+std::string Shape::toString() const {
+	std::string stringx = "(border: " + borderColor();
+	if (fill())
+		stringx += ", fill: " + fillColor();
+
+	return stringx;
 }
 
 std::ostream& operator<<(std::ostream& o, const Shape& s) {
-	// TODO: implement me
+	o<< s.toString();
 	return o;
 }

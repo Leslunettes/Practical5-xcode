@@ -21,7 +21,11 @@ public:
 	Square(Square&& other) = default;
 	virtual ~Square() override;
 
-	// Choose which functions to implement here
+	// For Square:
+        // Square with side X (...)
+        // The parentheses behave as in Rectangle
+
+	virtual std::string toString() const;
 };
 
 #endif /* SQUARE_H_ */

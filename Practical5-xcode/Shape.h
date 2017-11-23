@@ -56,8 +56,8 @@ public:
 	void setFillColor(const std::string& color);
 
 	// Functions for computing the area, perimeter, and to string
-	float area() const;
-	float perimeter() const;
+	virtual float area() const=0;
+	virtual float perimeter() const=0;
 
 	// The right way to represent a shape is as follows.
 	// For Rectangle:
@@ -70,12 +70,15 @@ public:
 	// For Circle:
 	// Circle of radius X (...)
 	// The parentheses behave as in Rectangle
-	std::string toString() const;
+	virtual std::string toString() const;
 
 	friend std::ostream& operator<<(std::ostream&, const Shape&);
 private:
 	// TODO:
 	// Add private members.
+	std::string borderColor_;
+	std::string fillColor_;
+	bool filled_;
 
 };
 
